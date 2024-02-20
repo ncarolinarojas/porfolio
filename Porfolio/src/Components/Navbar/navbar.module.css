@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px; 
+    height: 20px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 100%;
+    width: 60px;
+  }
+  
+  .optionsContainer {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .options li {
+    margin-right: 20px;
+  }
+  
+  .options1 {
+    text-decoration: none;
+    color: inherit;
+  }
+  
