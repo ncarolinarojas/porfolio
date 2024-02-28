@@ -1,0 +1,26 @@
+[
+    {
+        "name": "SILENCE",
+        "tools": ["React.js", "Node.js", "Express", "PostgreSQL", "Redux", "Mercado Pago Checkout PRO"],
+        "description": "SILENCE Project is a project that pursues the objective of functioning as the e-commerce platform of the SILENCE brand, carried out as a final project in Soy Henry.This website not only enjoys data protection, it also enjoys authentication with third parties such as Google and Facebook, rendering of products available for sale, favorite section for users, possibility of adding products to later proceed with their purchase through Mercado Payment, a dashboard that only users as administrators can view where they can: create products, edit product information, edit discount message, view sales graph, view list of registered general users, possibility of deactivating users, among others",
+        "image": "https://i.imgur.com/epHVRwl.png",
+        "URL": "https://silencepage.netlify.app/",
+        "URLgit": "https://github.com/Silence-Project/Project-Silence-Henry/tree/main"
+    },
+    {
+        "name": "DRIVERS APP",
+        "tools": ["React.js", "Node.js", "Express", "PostgreSQL", "Redux"],
+        "description": "DRIVER APP is an application that allows you to have a list of existing formula one drivers, in turn, it allows you to create new drivers and have them saved in a database, in this way you can have a database of all the drivers of this magnificent sport.",
+        "image": "",
+        "URL": "",
+        "URLgit": ""
+    },
+    {
+        "name": "SHOPI E-COMMERCE",
+        "tools": ["React.js", "Node.js", "Tailwind CSS"],
+        "description": "SHOPEE E COMMERCE is a small e-commerce application that uses the Plazti Fake API. The purpose is to implement the creation of a functional search bar using React.js UseContext, add to the shopping cart and be able to do a checkout process.",
+        "image": "https://i.imgur.com/vH8XmkL.jpeg",
+        "URL": "https://shopi-e-commerce.netlify.app/",
+        "URLgit": "https://github.com/ncarolinarojas/Shop_Prueba"
+    }
+]

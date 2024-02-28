@@ -10,8 +10,7 @@ function FrontPage() {
         Fullstack Developer / Business Management
       </h3>
       <p className={style.paragraph}>
-      I am a Web Developer and Business Administrator passionate about technology and continuous learning, both in technology and in language learning.
-I currently have solid and demonstrable knowledge of tools such as React.js, Node.js, PostgreSQL, Sequelize, AWS, using the Javascript programming language. Likewise, I have skills in communication, teamwork, leadership and sales in my capacity as a Business Administrator, which allows me to prioritize what a client needs, organize, direct and seek effective and comprehensive solutions to problems.
+      I'm a FullStack Developer passionate about new technologies with solid knowledge in tools like Node.js, Amazon Web Services AWS, Express, Sequelize, PostgreSQL, React.js, Redux, and Bootstrap. Also, I'm a lover of languages; currently, I'm at a B2 level in English and business management, with experience in sales and purchasing analytics. In addiction, I love working in a team and I am passionate about leadership. Likewise, I like to solve problems with comprehensive solutions, I am responsible and proactive. 
       </p>
       <Contact/>
     </div>
