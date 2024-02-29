@@ -1,10 +1,16 @@
 .container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px; 
-    height: 20px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 60px; /* Aumenté la altura para dejar espacio para el logo */
+  position: fixed;
+  top: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  background-color: #fff; /* Agregué un fondo blanco para mayor visibilidad */
+  z-index: 1000; /* Establece la capa z para que esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregué una sombra para resaltar */
+}
   
   .logoContainer {
     display: flex;

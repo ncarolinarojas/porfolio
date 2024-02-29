@@ -5,3 +5,8 @@
     align-items: center;
     text-align: center;
 }
+
+.homeContainer {
+    position: relative;
+    z-index: 2; 
+  }
