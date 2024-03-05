@@ -1,12 +1,17 @@
-.layout {
+.container {
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.homeContainer {
-    position: relative;
-    z-index: 2; 
-  }
+.fixedContent {
+
+    padding: 20px;
+    height: 100vh; 
+}
+
+.scrollableContent {
+
+    flex: 1;
+    overflow-y: auto; 
+    padding: 20px;
+    height: 500px; 
+}

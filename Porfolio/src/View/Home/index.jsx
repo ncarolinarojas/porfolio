@@ -4,14 +4,21 @@ import FrontPage from "../../Sections/FrontPage";
 import Projects from "../../Sections/Projects";
 import Contact from "../../Components/Contact";
 import style from '../Home/home.module.css';
+import Navbar from "../../Components/Navbar";
 
 function Home() {
   return (
-    <div className={style.homeContainer}>
-      <div className={style.layout}>
+    <div >
+      <div className={style.container}>
+        <div className={style.fixedContent}>
         <FrontPage />
-        <Projects />
+
+        <Navbar/>
+        </div>
+        <div className={style.scrollableContent}>
         <Contact/>
+        <Projects />
+        </div>
       </div>
     </div>
   );

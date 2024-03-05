@@ -7,13 +7,15 @@
     display: flex;
     border: 1px solid rgba(211, 210, 210, 0.03);
     border-radius: 10px;
-    transition: transform 0.3s, background-color 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, rgba(194, 157, 208, 0.7), rgba(255, 255, 255, 0));
 }
 
 .photo {
@@ -42,13 +44,34 @@
 
 .paragraph button {
     width: 100px;
-    border-radius: 20px; /* Bordes curvos */
-    background-color: #4caf50; /* Color de fondo del botón (puedes ajustar esto) */
-    color: white; /* Color del texto del botón */
+    border-radius: 20px;
+    background-color: #dca4e6; 
+    color: white;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .paragraph button:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón por encima */
+    background-color: #8e24aa; /* Cambiado a un tono morado más oscuro al pasar el ratón */
 }
+
+.icons {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadida transición para un cambio suave */
+    position: relative; /* Agregado position relative para que ::after se posicione correctamente */
+}
+
+.icons:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.icons::after {
+    content: ''; 
+    position: absolute; /* Posiciona ::after absolutamente con respecto al ícono */
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+}
+

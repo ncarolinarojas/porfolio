@@ -1,38 +1,36 @@
 // FrontPage.jsx
-import React from 'react';
+// import React from 'react';
 import style from '../FrontPage/frontpage.module.css';
+import data from '../../api/information.json'
 
 function FrontPage() {
   return (
-    <div className={style.container_front}>
+    <section className={style.container_front} id='frontpage'>
       <div className={style.overlay}>
       </div>
       <div>
-        <h1 className={style.tittle}>Natalia Rojas</h1>
+        <h1 className={style.tittle}>{data[0].profile.name}</h1>
         <h3 className={style.subtittle}>
-          Fullstack Developer / Business Management
+          {data[0].profile.subtittle}
         </h3>
       </div>
       <div>
         <p className={style.paragraph}>
-          I'm a FullStack Developer passionate about new technologies with solid knowledge in tools like Node.js, Amazon Web Services AWS, Express, Sequelize, PostgreSQL, React.js, Redux, and Bootstrap. Also, I'm a lover of languages; currently, I'm at a B2 level in English and business management, with experience in sales and purchasing analytics. In addition, I love working in a team, and I am passionate about leadership. Likewise, I like to solve problems with comprehensive solutions; I am responsible and proactive.
+          {data[0].profile.paragraph}
         </p>
       </div>
       <div className={style.subtittle}>
         <h3>My Skills</h3>
         <div className={style.skills}>
-          <p>Javascript</p>
-          <p>Node.js</p>
-          <p>Express</p>
-          <p>Sequelize</p>
-          <p>PostgreSQL</p>
-          <p>React.js</p>
-          <p>AWS</p>
-          <p>Boostrap</p>
+          {data[0].profile.skills.map((skill, index) => {
+            return (
+              <p key={index}> {skill} </p>
+            )
+          })}
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,58 +1,28 @@
-/* Contact.module.css */
-
 .contactContainer {
-  position: fixed;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
-  transition: padding 0.3s; /* Agrega la transición para el tamaño del botón */
-}
-
-.contactButton {
-  font-family: 'Arial', sans-serif;
-  font-size: 20px; /* Tamaño del símbolo de ir hacia atrás */
-  background: linear-gradient(to right, #8a3ab9, #b45088);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.contactContainer.expanded .contactButton {
-  padding: 10px 20px; /* Ajusta según sea necesario */
-}
-
-.contactButton:hover {
-  background: linear-gradient(to right, #692f7b, #912158);
-  color: #030303;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
 }
 
 .sidebar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-left: 10px;
+  flex-direction: row; /* Cambia la dirección a horizontal */
 }
 
 .sidebar a {
   color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
-  transition: transform 0.3s; 
+  margin-right: 10px; /* Agrega un margen derecho entre los iconos */
+  transition: transform 0.3s, color 0.3s; /* Añade la transición de color al hacer hover */
 }
 
 .sidebar a:hover {
-  transform: scale(2); 
+  transform: scale(1.5); /* Aumenta el tamaño al hacer hover */
+  color: #ffcc00; /* Cambia el color al hacer hover */
 }
 
-.activeLink {
-  color: #ff8c00;
+.contactContainer:hover {
+  box-shadow: 0 0 15px rgba(41, 17, 55, 0.5);
 }

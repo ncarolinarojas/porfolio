@@ -6,11 +6,12 @@ import FrontPage from './Sections/FrontPage';
 import Projects from './Sections/Projects';
 import Navbar from './Components/Navbar';
 
+
 function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/frontpage" element={<FrontPage />} />

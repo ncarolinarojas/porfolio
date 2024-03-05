@@ -1,45 +1,20 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  height: 60px; /* Aumenté la altura para dejar espacio para el logo */
-  position: fixed;
-  top: 0;
-  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
-  background-color: #fff; /* Agregué un fondo blanco para mayor visibilidad */
-  z-index: 1000; /* Establece la capa z para que esté por encima de otros elementos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregué una sombra para resaltar */
+.optionText {
+  transition: transform 0.3s;
 }
-  
-  .logoContainer {
-    display: flex;
-    align-items: center;
-  }
 
-  .logo {
-    height: 100%;
-    width: 60px;
-  }
-  
-  .optionsContainer {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .options {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .options li {
-    margin-right: 20px;
-  }
-  
-  .options1 {
-    text-decoration: none;
-    color: inherit;
-  }
-  
+.line {
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: black; /* Color de la línea */
+  transition: width 0.3s, transform 0.3s;
+}
+
+.options1:hover .optionText {
+  transform: translateX(5px); /* Desplaza el texto hacia la derecha al hacer hover */
+}
+
+.options1:hover .line {
+  width: 100%; /* Aumenta el ancho de la línea al hacer hover */
+  transform-origin: left; /* Ajusta el punto de origen para una expansión desde la izquierda */
+}

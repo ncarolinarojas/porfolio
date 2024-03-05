@@ -1,29 +1,45 @@
-// import React from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/LOGO_NR.svg';
+// import React, { useState } from 'react';
 import style from '../Navbar/navbar.module.css';
 
 function Navbar() {
+  // Agregar estado para manejar el clic y expandir la línea
+  // const [activeOption, setActiveOption] = useState(null);
+
   return (
     <nav className={style.container}>
-      <div className={style.logoContainer}>
-        <NavLink to={'/#frontpage'}>
-          <figure>
-            <img src={logo} alt="logo" className={style.logo} />
-          </figure>
-        </NavLink>
-      </div>
       <div className={style.optionsContainer}>
         <ul className={style.options}>
           <li>
-            <NavLink to={'/#frontpage'} className={style.options1}>
-              About me
-            </NavLink>
+            <a
+              href="/#frontpage"
+              className={style.options1}
+              // Agregar evento de clic y manejar el estado para la animación
+              // onClick={() => setActiveOption("aboutMe")}
+            >
+              <span className={style.optionText}>About me</span>
+              {/* Agregar la línea debajo de la opción */}
+              <span className={style.line}></span>
+            </a>
           </li>
           <li>
-            <NavLink to={'/#projects'} className={style.options1}>
-              Projects
-            </NavLink>
+            <a
+              href="/#projects"
+              className={style.options1}
+              // onClick={() => setActiveOption("projects")}
+            >
+              <span className={style.optionText}>Projects</span>
+              <span className={style.line}></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/#contact"
+              className={style.options1}
+              // onClick={() => setActiveOption("projects")}
+            >
+              <span className={style.optionText}>Contact</span>
+              <span className={style.line}></span>
+            </a>
           </li>
         </ul>
       </div>

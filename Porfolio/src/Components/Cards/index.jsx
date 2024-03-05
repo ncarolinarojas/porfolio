@@ -1,6 +1,8 @@
 // import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import style from './cards.module.css';
+import { FaCode } from "react-icons/fa";
+import { FaPager } from "react-icons/fa";
 
 function Cards({ name, tools, description, image, url, urlgit }) {
   return (
@@ -14,12 +16,8 @@ function Cards({ name, tools, description, image, url, urlgit }) {
         <h3>{name}</h3>
         <p>Tools: {tools}</p>
         <p>Description: {description}</p>
-        <button>
-          <a href={url} target="_blank" rel="noopener noreferrer">Page</a>
-        </button>
-        <button>
-        <a href={urlgit} target="_blank" rel="noopener noreferrer">Code</a>
-        </button>
+        <a href={url} target="_blank" rel="noopener noreferrer"><FaPager className={style.icons}/></a>
+        <a href={urlgit} target="_blank" rel="noopener noreferrer"><FaCode className={style.icons} /></a>
       </div>
     </div>
   );
