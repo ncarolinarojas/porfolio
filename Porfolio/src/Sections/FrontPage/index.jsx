@@ -19,6 +19,11 @@ function FrontPage() {
           {data[0].profile.paragraph}
         </p>
       </div>
+      <div>
+        <button>
+            Descarga mi CV!
+        </button>
+      </div>
       <div className={style.subtittle}>
         <h3>My Skills</h3>
         <div className={style.skills}>

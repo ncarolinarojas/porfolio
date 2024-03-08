@@ -3,15 +3,24 @@
 }
 
 .fixedContent {
-
     padding: 20px;
-    height: 100vh; 
 }
 
 .scrollableContent {
-
     flex: 1;
-    overflow-y: auto; 
+    overflow-y: auto;
     padding: 20px;
-    height: 500px; 
+    height: 90vh;
+
+    /* Estilo de la barra de desplazamiento vertical */
+    scrollbar-width: thin; /* para navegadores que soportan el estándar */
+    scrollbar-color: #8a2be2 #f1f1f1; /* color del pulgar y de la pista */
+
+    /* Estilo para navegadores webkit (Chrome, Safari) */
+    scrollbar-track-color: #f1f1f1;
+    scrollbar-face-color: #8a2be2;
+    scrollbar-shadow-color: #8a2be2;
+    scrollbar-highlight-color: #f1f1f1;
+    scrollbar-3dlight-color: #f1f1f1;
+    scrollbar-darkshadow-color: #8a2be2;
 }

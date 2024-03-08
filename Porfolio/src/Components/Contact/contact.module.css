@@ -2,27 +2,26 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
+  margin-top: 50px;
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .sidebar {
   display: flex;
-  flex-direction: row; /* Cambia la dirección a horizontal */
+  flex-direction: row;
 }
 
 .sidebar a {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px; /* Agrega un margen derecho entre los iconos */
-  transition: transform 0.3s, color 0.3s; /* Añade la transición de color al hacer hover */
+  margin-right: 10px; 
+  transition: transform 0.3s, color 0.3s; 
 }
 
 .sidebar a:hover {
-  transform: scale(1.5); /* Aumenta el tamaño al hacer hover */
-  color: #ffcc00; /* Cambia el color al hacer hover */
-}
-
-.contactContainer:hover {
-  box-shadow: 0 0 15px rgba(41, 17, 55, 0.5);
+  transform: scale(1.5);
+  color: #1e022c; 
 }

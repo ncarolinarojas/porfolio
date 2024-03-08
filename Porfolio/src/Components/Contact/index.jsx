@@ -4,12 +4,12 @@ import { FaGithub } from 'react-icons/fa';
 import { FaRegFilePdf } from "react-icons/fa6";
 import styles from './contact.module.css';
 import { Link } from 'react-router-dom';
+import pdfLink from '../../assets/CVNataliaRojas.pdf'
 
 function Contact() {
   const gmailEmail = 'nataliarojasco22@gmail.com';
   const subject = encodeURIComponent('Deseo contactarte!');
   const gmailLink = `mailto:${gmailEmail}?subject=${subject}`;
-  const pdfLink = '../../../assets/CVNataliaRojas.pdf';
 
   return (
     <section className={styles.contactContainer} id='contact'>

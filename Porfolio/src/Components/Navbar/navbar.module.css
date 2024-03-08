@@ -1,13 +1,32 @@
+.options {
+  list-style-type: none; /* Quitar los puntos de la lista desordenada */
+  padding: 0; /* Eliminar el espacio interior predeterminado */
+  margin: 0; /* Eliminar el margen exterior predeterminado */
+}
+
 .optionText {
-  transition: transform 0.3s;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
 .line {
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   height: 2px;
   width: 0;
-  background-color: black; /* Color de la línea */
-  transition: width 0.3s, transform 0.3s;
+  background-color: #8a2be2; /* Cambiado a lila */
+  transition: width 0.3s, transform 0.3s ease-in-out;
+}
+
+.options1 {
+  position: relative;
+  text-decoration: none;
+  color: #000; /* Color del texto */
+  margin: 0 15px; /* Espaciado entre opciones */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  display: inline-block;
 }
 
 .options1:hover .optionText {
@@ -16,5 +35,10 @@
 
 .options1:hover .line {
   width: 100%; /* Aumenta el ancho de la línea al hacer hover */
-  transform-origin: left; /* Ajusta el punto de origen para una expansión desde la izquierda */
+  transform-origin: right; /* Ajusta el punto de origen para una expansión desde la derecha */
+}
+
+.options1.active .line {
+  width: 130%; /* Aumenta el ancho de la línea en estado activo */
+  transform-origin: right; /* Ajusta el punto de origen para una expansión desde la derecha */
 }
