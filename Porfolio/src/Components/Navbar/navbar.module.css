@@ -1,44 +1,50 @@
+/* navbar.module.css */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .options {
-  list-style-type: none; /* Quitar los puntos de la lista desordenada */
-  padding: 0; /* Eliminar el espacio interior predeterminado */
-  margin: 0; /* Eliminar el margen exterior predeterminado */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
 }
 
 .optionText {
-  position: relative;
-  display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
 
 .line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 2px;
-  width: 0;
-  background-color: #8a2be2; /* Cambiado a lila */
+  background-color: #8a2be2;
   transition: width 0.3s, transform 0.3s ease-in-out;
 }
 
 .options1 {
-  position: relative;
   text-decoration: none;
-  color: #000; /* Color del texto */
-  margin: 0 15px; /* Espaciado entre opciones */
-  overflow: hidden; /* Ocultar el desbordamiento */
-  display: inline-block;
+  color: #000;
+  margin-right: 10px; /* Espaciado entre opciones */
+}
+
+.options1:last-child {
+  margin-right: 0; /* Elimina el margen derecho para el último ítem */
 }
 
 .options1:hover .optionText {
-  transform: translateX(5px); /* Desplaza el texto hacia la derecha al hacer hover */
+  transform: translateX(5px);
 }
 
 .options1:hover .line {
-  width: 100%; /* Aumenta el ancho de la línea al hacer hover */
-  transform-origin: right; /* Ajusta el punto de origen para una expansión desde la derecha */
+  width: 100%;
+  transform-origin: right;
 }
 
 .options1.active .line {
-  width: 130%; /* Aumenta el ancho de la línea en estado activo */
-  transform-origin: right; /* Ajusta el punto de origen para una expansión desde la derecha */
+  width: 130%;
+  transform-origin: right;
 }

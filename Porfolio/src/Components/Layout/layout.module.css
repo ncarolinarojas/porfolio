@@ -1,0 +1,19 @@
+/* layout.module.css */
+
+.containerchild {
+    background-color: white;
+    height: 70vh;
+    width: 70vw;
+    margin-top: 50px; /* Agregado para centrar verticalmente */
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Asegúrate de que tenga una posición relativa */
+  }
+  
