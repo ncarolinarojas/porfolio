@@ -2,7 +2,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './View/Home';
-import Projects from './Sections/Projects';
+import ProjectsView from './View/Projects';
+import Contact from './Sections/Contact';
 
 
 
@@ -13,8 +14,8 @@ function App() {
       {/* <Navbar></Navbar> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsView />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

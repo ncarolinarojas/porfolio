@@ -3,11 +3,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  background: linear-gradient(to bottom, #4b0082, #ffffff); /* Gradiente desde morado oscuro (#4b0082) hasta blanco (#ffffff) */
+  background: linear-gradient(to bottom, #AF7AC5 , #D7BDE2); /* Gradiente desde morado oscuro (#4b0082) hasta blanco (#ffffff) */
   color: purple;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed; 
 }
 
 #root {

@@ -1,101 +1,107 @@
 /* frontpage.module.css */
 
 .container_front {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  z-index: 0;
+  width: 60%;
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.centered {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 200;
-  font-style: normal;
   color: black;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.tittle,
-.subtittle,
-.paragraph {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.tittle {
-  margin-top: 20px;
-  font-size: 2em;
-  font-style: italic;
-  animation: rainbowText 6s infinite, glowText 2s infinite alternate;
-  letter-spacing: 5px; /* Añade espacio entre las letras */
-  font-weight: normal; /* Elimina la negrita */
-}
-
-.tittle {
-  margin-top: 20px;
-  font-size: 2em;
-  font-style: italic;
-  animation: rainbowText 6s infinite, glowText 2s infinite alternate;
-}
-
 .subtittle {
-  margin-top: 10px;
+  color: #800080;
 }
 
 .paragraph {
-  margin-top: 10px;
-  max-width: 700px;
+  color: black;
+  margin-bottom: 10px;
 }
 
-/* Nuevos estilos para las habilidades */
-.subtittle h3 {
-  margin-top: 20px;
-}
-
-.skills {
-  margin-top: 20px; /* Ajusta la distancia entre el subtítulo y la caja de habilidades */
-  padding: 20px; /* Ajusta el espaciado dentro de la caja de habilidades */
-  background-color: rgba(138, 58, 190, 0.2); /* Fondo transparente morado */
-  border-radius: 10px; /* Borde suave */
-  box-shadow: 0px 10px 20px rgba(138, 58, 190, 0.5); /* Sombra morado oscuro */
+.brands_list {
+  overflow: hidden;
   display: flex;
+  /* align-content: flex-start; */
   justify-content: center;
 }
 
-.skills p {
-  margin: 0 10px; /* Ajusta el margen entre las habilidades */
-  position: relative;
+.skills {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 3rem;
+  justify-items: stretch;
 }
 
-.skills p::after {
-  content: '';
-  display: block;
-  width: 50%; /* Ajusta el tamaño de la línea al 50% del tamaño de la letra */
-  height: 1px;
-  background-color: lightgray; /* Línea gris claro */
-  margin-top: 5px; /* Ajusta la distancia entre el párrafo y la línea */
-  position: absolute;
-  left: 25%; /* Centra la línea debajo de la letra */
-  box-shadow: 0px 10px 20px rgba(178, 165, 183, 0.5); /* Sombra morado oscuro que ilumina hacia abajo */
+.skill {
+  margin-left: 10px;
+  animation: scroll 10s linear infinite;
+}
+
+.skills img {
+  padding: 5px;
+}
+
+.buttons {
+  margin-right: 10px;
 }
 
 
-@keyframes glowText {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra blanca tenue */
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 1rem);
   }
-  100% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra blanca más intensa */
-  }
+}
+
+.skills {
+  animation: scroll 10s linear infinite;
+}
+
+.shimmering {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: pink;
+  background-image: linear-gradient(-60deg,
+      transparent 0%, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.shimmering:hover {
+  background-position-x: -150%;
+  transition:
+    background-position-x 1000ms;
+}
+
+.shimmeringtwo {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: rgb(166, 136, 175);
+  background-image: linear-gradient(-60deg,
+      transparent 0%, transparent 40%,
+      #ffffff44 40%, #ffffff44 60%,
+      transparent 60%, transparent 100%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 150%;
+}
+
+.shimmeringtwo:hover {
+  background-position-x: -150%;
+  transition:
+    background-position-x 1000ms;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
